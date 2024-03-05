@@ -10,6 +10,7 @@
 		8EBDF3502B97052200B2A8E0 /* KKHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EBDF3472B97052100B2A8E0 /* KKHelper.framework */; };
 		8EBDF3552B97052200B2A8E0 /* KKHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBDF3542B97052200B2A8E0 /* KKHelperTests.swift */; };
 		8EBDF3562B97052200B2A8E0 /* KKHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EBDF34A2B97052100B2A8E0 /* KKHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8EBDF3742B97054E00B2A8E0 /* KKHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBDF3732B97054E00B2A8E0 /* KKHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +28,7 @@
 		8EBDF34A2B97052100B2A8E0 /* KKHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKHelper.h; sourceTree = "<group>"; };
 		8EBDF34F2B97052200B2A8E0 /* KKHelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KKHelperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EBDF3542B97052200B2A8E0 /* KKHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKHelperTests.swift; sourceTree = "<group>"; };
+		8EBDF3732B97054E00B2A8E0 /* KKHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 		8EBDF33D2B97052100B2A8E0 = {
 			isa = PBXGroup;
 			children = (
+				8EBDF3732B97054E00B2A8E0 /* KKHelper.swift */,
 				8EBDF3492B97052100B2A8E0 /* KKHelper */,
 				8EBDF3532B97052200B2A8E0 /* KKHelperTests */,
 				8EBDF3482B97052100B2A8E0 /* Products */,
@@ -144,6 +147,7 @@
 				TargetAttributes = {
 					8EBDF3462B97052100B2A8E0 = {
 						CreatedOnToolsVersion = 15.2;
+						LastSwiftMigration = 1520;
 					};
 					8EBDF34E2B97052200B2A8E0 = {
 						CreatedOnToolsVersion = 15.2;
@@ -191,6 +195,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EBDF3742B97054E00B2A8E0 /* KKHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +346,7 @@
 		8EBDF35A2B97052200B2A8E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -364,6 +370,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -372,6 +379,7 @@
 		8EBDF35B2B97052200B2A8E0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -403,6 +411,7 @@
 		8EBDF35D2B97052200B2A8E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = HNSKUL3WR3;
@@ -419,6 +428,7 @@
 		8EBDF35E2B97052200B2A8E0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = HNSKUL3WR3;
