@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-
 extension Date {
   
   public func format(_ formatString: String =  "dd.MMMM HH:mm:ss") -> String {
@@ -32,3 +31,4 @@ extension Date {
   }
   
 }
+
